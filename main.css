@@ -1,0 +1,272 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.container1 {
+    display: flex;
+    position: sticky;
+    padding: 60px;
+}
+h1 {
+    color: #F78C8C;
+    font-family: 'inter',sans-serif;
+    font-size: 20px;
+    text-align: left;
+    font-weight: normal;
+}
+nav {
+    display: flex;
+    text-align: right;
+}
+ul {
+    list-style: none;
+    text-decoration: none;
+    text-align: right;
+    margin-left: 60px;
+}
+li a  {
+    color: #F78C8C;
+    list-style: none;
+    text-decoration: none;
+    padding: 40px;
+    font-size: 18px;
+    font-family: 'poppins',sans-serif;
+}
+li a:hover{
+    color: yellow;
+}
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+/* Content styling */
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    padding-top: 0px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #F78C8C;
+    font-family: 'poppins',sans-serif;
+}
+
+pj {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'inter',sans-serif;
+}
+
+p2 {
+    color: #ffffff;
+    font-family: 'poppins',sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.button1 {
+    margin: 20px;
+    display: inline-block;
+    background-color: #F78C8C;
+    color: #000000;
+    padding: 8px 50px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-left: 0px;
+    font-family: 'poppins',sans-serif;
+    
+}
+
+.button1:hover {
+    background-color:yellow;
+}
+
+/* Image styling */
+.image {
+    flex: 1;
+    text-align: right;
+    margin-right: 100px;
+}
+
+img {
+    max-width: 100%;
+    height: 340PX;
+}
+.tentang {
+    font-family: 'poppins',sans-serif;
+    color:#F78C8C;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 70px;
+}
+.des1 {
+    font-family: 'poppins',sans-serif;
+    color: #000000;
+    padding-left: 60px;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: justify;
+    padding: 60px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    font-weight: medium;
+}
+.layanan {
+    font-family: 'poppins',sans-serif;
+    color:#F78C8C;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+.des2 {
+    font-family: 'poppins',sans-serif;
+    color:#ffffff;
+    padding-left: 60px;
+    font-size: 20px;
+    text-align: justify;
+    padding: 60px;
+}
+.wd {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.profile img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.info {
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+p1 {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    color: white;
+    text-align: justify;    
+}
+.animated-text {
+    font-size: 36px;
+    color:#F78C8C;
+    opacity: 10;
+    font-family: 'poppins',sans-serif;
+    padding-left: 40px;
+    transform: translateY(-50px);
+    animation: slideDown 3s ease forwards;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 9;
+        transform: translateY(0);
+    }
+}
+p3{
+    font-size: 16px;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    color: white;
+    text-align: right;
+    padding-left: 40px; 
+    margin-left: 40px;  
+}
+.wadah {
+    display: flex;
+    padding: 30px;
+    padding-left: 60px;
+    background: #ffffff;
+}
+.kontak {
+    text-align: left;
+    font-size: 20px;
+    font-family: 'poppins',sans-serif;
+    color: #000000;
+    font-weight: bold;
+}
+.devicekontak {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    font-family: 'poppins',sans-serif;
+    font-weight: normal;
+    display: flex;
+}
+
+/* Tambahkan media query untuk perangkat mobile */
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    ul {
+        margin: 20px 0;
+    }
+
+    li a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Tambahkan CSS untuk mengatur tampilan di perangkat mobile */
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .image {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .tentang, .layanan, .des1, .des2 {
+        padding: 10px;
+    }
+
+    .profile img {
+        padding: 10px;
+    }
+
+    .wd, .wadah {
+        flex-direction: column;
+    }
+
+    .devicekontak {
+        flex-direction: column;
+    }
+}
